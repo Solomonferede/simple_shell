@@ -85,6 +85,7 @@ waitpid (man 2 waitpid)
 wait3 (man 2 wait3)
 wait4 (man 2 wait4)
 write (man 2 write)
+
 # Compilation
 Your shell will be compiled this way:
 
@@ -93,4 +94,4 @@ Your shell will be compiled this way:
 # files
 - README.md - description about the project repo
 - man_1_simple_shell - is the man page for the shell we are going to write.
-- AUTHORS - file at the root of your repository, listing all individuals having contributed content to the repository. 
+- AUTHORS - file at the  root of your repository, listing all individuals having contributed content to the repository. 
