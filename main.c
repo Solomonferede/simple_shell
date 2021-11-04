@@ -1,9 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * main - func with infinite loop
- * @ac: No use
- * @av: No use
+ * @ac: argument to main
+ * @av: argument to main
  * Return: loop.
  **/
 int main(int ac, char **av)
