@@ -38,5 +38,6 @@ $ ls -l
 .SH BUGS
 Single space required after argument.
 
+
 .SH AUTHOR
 Solomon Ferede, Nicolas Wanjau.
