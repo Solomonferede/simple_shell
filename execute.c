@@ -9,7 +9,8 @@ void execute_proc(char **cmd)
 {
 
 	char *parametro = (*(cmd + 1));
-	char *s, *slash = "/";
+	char *s;
+	char *slash = "/";
 	char *o;
 
 	char *vartoprint = *cmd;
