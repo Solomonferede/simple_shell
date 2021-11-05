@@ -39,7 +39,10 @@ char *find_command(char *command)
 					if (cmd == NULL)
 					{
 						perror("Error");
-					}}}}
+					}
+				}
+			}
+		}
 		environ++;
 	}
 	return ("Error: Not Found");
