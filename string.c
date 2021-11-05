@@ -24,7 +24,6 @@ int _strcmpdir(char *s1, char *s2)
 /**
  * charput - writes the character like putchar
  * @c: The character to print
- *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
