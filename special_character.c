@@ -23,7 +23,7 @@ int lookforslash(char *cmd)
 }
 
 /**
- * compareExit - identifies if first char is a slash.
+ * compareExit - Checks if the user is typed exit
  * @s1: first string
  * @s2: exit string
  * Return: 1 if yes 0 if no.
@@ -44,7 +44,7 @@ int compareExit(char *s1, char *s2)
 }
 
 /**
- * compareEnv - identifies if first char is a slash.
+ * compareEnv - checks if the used typed env.
  * @s1: first string
  * @s2: exit string
  * Return: 1 if yes 0 if no.
@@ -86,7 +86,6 @@ char **identify_string(char *parameter)
 	}
 	execute_proc(buf);
 	return (buf);
-
 }
 /**
  * controlC - avoid close the shell
