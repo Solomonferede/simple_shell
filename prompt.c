@@ -1,8 +1,6 @@
 #include "main.h"
-
 /**
  * prompt - call prompt from another function (prompt)
- *
  **/
 void prompt(void)
 {
@@ -10,12 +8,12 @@ void prompt(void)
 	{
 		char *text = NULL, **environ;
 		pid_t child_pid;
-		int status, lenbuf;
+		int status, byte_read;
 		size_t bufsize = 0;
 
 		place("$ ");
-		lenbuf = getline(&text, &bufsize, stdin);
-		if (lenbuf == -1)
+		byte_read = getline(&text, &bufsize, stdin);
+		if (byte_read == -1)
 			exit(98);
 		if (compareExit(text, "exit") == 0)
 			exit(0);
@@ -35,13 +33,14 @@ void prompt(void)
 						!(_strcmpdir(*environ, "TERM")) ||
 						!(_strcmpdir(*environ, "PATH")))
 				{
-					place(*environ), place("\n"); }
-				environ++; }}
+					place(*environ), place("\n");
+				}
+				environ++;
+			}}
 		child_pid = fork();
 		if (child_pid < 0)
 			perror("Error");
 		if (child_pid == 0)
 			identify_string(text);
 		else
-			wait(&status);
-	}}
+			wait(&status); }}
