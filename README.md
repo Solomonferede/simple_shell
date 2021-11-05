@@ -94,12 +94,3 @@ Your shell will be compiled this way:
 # files
 - README.md - description about the project repo
 - man_1_simple_shell - is the man page for the shell we are going to write.
-- AUTHORS - file at the  root of your repository, listing all individuals having contributed content to the repository.
-- cmd.c -
-- main.c -
-- main.h -
-- execute.c -
-- hsh -
-- prompt.c -
-- special_character.c -
-- string .c - 

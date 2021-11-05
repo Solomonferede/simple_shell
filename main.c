@@ -2,14 +2,14 @@
 
 /**
  * main - func with infinite loop
- * @ac: argument to main
- * @av: argument to main
+ * @argc: argument to main
+ * @argv: argument to main
  * Return: loop.
  **/
-int main(int ac, char **av)
+int main(int argc, char **argv)
 {
-	(void)av;
-	(void)ac;
+	(void)argv;
+	(void)argc;
 
 	signal(SIGINT, controlC);
 	prompt();
